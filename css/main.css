@@ -1084,9 +1084,3 @@ body {
   height: 30px;
   width: 30px;
 }
-
-@media (max-width: 1000px) {
-  .review__btn {
-    color: black;
-  }
-}
