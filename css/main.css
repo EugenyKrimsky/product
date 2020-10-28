@@ -568,7 +568,8 @@ body {
   margin: 0 auto;
 }
 .review textarea {
-  padding: 17px 175px 57px;
+  padding: 17px 0 57px;
+  width: 498px;
   resize: none;
 }
 
