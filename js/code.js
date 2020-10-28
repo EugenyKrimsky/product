@@ -103,4 +103,7 @@ $(document).ready(function() {
         $('.review input.short-input').css('padding', '17px 172px 17px 183px');
         $('.review input.short-input').css('width', '100%');
     }
+    if (get_name_browser() == "Safari") {
+        $('.btn-basket').css('font-size', '13px');
+    } 
 })
