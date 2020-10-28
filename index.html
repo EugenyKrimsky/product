@@ -16,6 +16,7 @@
         crossorigin="anonymous">
     </script>
 </head>
+    <a href="#" class="scrollup">Наверх</a>
 <body>
     <header class="header">
         <div class="container">
@@ -37,10 +38,16 @@
                 <span class="trans-lat">
                     LAT
                 </span>
-                <div class="head-img">
-                    <img class="img-loupe" src="img/loupe.svg" alt="loupe">
-                    <img class="img-cart" src="img/cart.svg" alt="cart">
+                <span class="trans-en">
+                    EN
+                </span>
+                <div class="search-block">  
+                    <form class="search-form" action="search.php" name="search" method="get">
+                        <button class="btn-search" type="button"></button>
+                        <input class="input-search" type="text" name="q"  value placeholder="Найти товары">       
+                    </form>   
                 </div>
+                <img class="img-cart" src="img/cart.svg" alt="cart">
                 <div class="basket">
                     <h2 class="heading-red">Корзина</h2>
                     <span class="heading-normal">2 товара</span>
@@ -467,16 +474,15 @@
                 </div>
                 <div class="footer-group">
                     <h5 class="light-heading">Информация</h5>
-                    <a href="#" class="links">Оплата</a>
-                    <a href="#" class="links">Доставка</a>
+                    <a href="#" class="links">Как нас найти</a>
+                    <a href="#" class="links">Оплата и Доставка</a>
                     <a href="#" class="links">Корзина</a>
-                    <a href="#" class="links">Партнеры</a>
-                    <a href="#" class="links">Фото товаров</a>
                 </div>
                 <div class="footer-group">
                     <h5 class="light-heading">Контакты</h5>
-                    <a href="#" class="links">+7 (39) 2685 86 74</a>
-                    <a href="#" class="links">info@salemarket.eu</a>
+                    <a href="#" class="links">+371 26858674<br>(Whats app)</a>
+                    <a href="#" class="links">info@nboutlet.eu</a>
+                    <a href="#" class="links">Slokas 52 (LV-1007) Riga</a>
                 </div>
                 <form class="footer-group form-inputs">
                     <h5 class="light-heading">Подписаться на уведомления</h5>

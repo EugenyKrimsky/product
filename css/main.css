@@ -138,7 +138,17 @@ body {
 }
 
 .trans-lat {
-  margin-right: 60px;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 143.69%;
+}
+
+.trans-en {
+  margin-right: 16px;
   color: rgba(0, 0, 0, 0.2);
   font-family: Muller;
   font-style: normal;
@@ -153,6 +163,52 @@ body {
 
 .img-cart {
   margin-right: 15px;
+}
+
+.search-block .btn-search {
+  background: url(../img/loupe.svg) no-repeat center;
+  height: 31px;
+  border: 0;
+  width: 31px;
+  cursor: pointer;
+  margin-right: 19px;
+  margin-left: 1px;
+}
+
+.btn-search:active,
+.btn-search:focus {
+  outline: none;
+}
+
+.search-block {
+  margin-bottom: 2px;
+  padding-right: 4px;
+}
+
+.search-form {
+  position: relative;
+}
+
+.input-search {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 143.69%;
+  letter-spacing: 0.02em;
+  display: none;
+  left: -130px;
+  position: absolute;
+  top: 40px;
+  background: #F9F9F9;
+  border: 2px solid #EFEFEF;
+  padding: 10px 30px 10px 12px;
+  width: 164px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.25);
+}
+.input-search.active {
+  display: block;
 }
 
 .container-flex {
@@ -292,6 +348,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 29px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/btn-up2.png") no-repeat;
 }
 
 .banner__text {

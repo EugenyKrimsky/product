@@ -54,13 +54,36 @@ $(document).ready(function() {
   	    fileListDisplay.appendChild(fileDisplayEl);
   	  });
   	};
-  
-  	sendFile = function (file) {
-  		var formData = new FormData();
-  	  var request = new XMLHttpRequest();
- 	
-  	  formData.set('file', file);
-  	  request.open("POST", 'https://jsonplaceholder.typicode.com/photos');
-  	  request.send(formData);
-  	};
+  $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    const menuBtn = $('.btn-search'),
+    menu = $('.input-search');
+
+    menuBtn.on('click', function() {
+        if ( $(this).hasClass('is-active') ) {
+            $(this).removeClass('is-active');
+            menu.slideUp();
+        } else {
+            $(this).addClass('is-active');
+            menu.slideDown();
+        }
+    });
+    
+    $(document).click(function (e) {
+        if ( !menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+            menu.slideUp();
+            menuBtn.removeClass('is-active');
+        };
+
+    });
 })
