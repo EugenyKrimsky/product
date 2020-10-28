@@ -86,4 +86,21 @@ $(document).ready(function() {
         };
 
     });
+    function get_name_browser(){
+    // получаем данные userAgent
+    var ua = navigator.userAgent;    
+    // с помощью регулярного выражения
+    // ищем упоминание названия браузера
+    if (ua.search(/Chrome/) > 0) return 'Chrome';
+    if (ua.search(/Firefox/) > 0) return 'Firefox';
+    if (ua.search(/Opera/) > 0) return 'Opera';
+    if (ua.search(/Safari/) > 0) return 'Safari';
+    if (ua.search(/MSIE/) > 0) return 'IE';
+    return false;
+    }
+    if (get_name_browser() == "Firefox") {
+        $('.review textarea').css('padding', '17px 158px 57px 170px');
+        $('.review input.short-input').css('padding', '17px 172px 17px 183px');
+        $('.review input.short-input').css('width', '100%');
+    }
 })
