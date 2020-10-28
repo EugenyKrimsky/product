@@ -563,10 +563,12 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 .review input.short-input {
-  padding: 17px 171px;
+  padding: 17px 0;
+  width: 498px;
+  margin: 0 auto;
 }
 .review textarea {
-  padding: 17px 170px 57px;
+  padding: 17px 175px 57px;
   resize: none;
 }
 
@@ -1081,4 +1083,10 @@ body {
   margin: 0 auto;
   height: 30px;
   width: 30px;
+}
+
+@media (max-width: 1000px) {
+  .review__btn {
+    color: black;
+  }
 }
